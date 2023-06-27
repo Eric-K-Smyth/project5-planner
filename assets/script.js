@@ -36,6 +36,9 @@ $(function () {
     var userInput = localStorage.getItem(timeBlockId);
     $(this).find(".description").val(userInput);
   });
+
+  $("#currentDay").text(dayjs().format("MMMM D, YYYY"));
+
   //
   // TODO: Add code to display the current date in the header of the page.
 });
